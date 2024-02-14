@@ -3,12 +3,13 @@ export class Switch {
     // Configure component
     this.config = Object.assign({
       attr: 'data-switch',
+      onSwitch: (btn, isSwitched) => {},
     }, options)
 
     // Initialize component
     this.init()
 
-    return this    
+    return this
   }
 
   init() {
@@ -22,16 +23,20 @@ export class Switch {
    * @return {void}
    */
   switch(ev) {
-    const { attr } = this.config  
+    const { attr, onSwitch } = this.config
     const isAnimatedBtn = ev.target.matches(`[${attr}], [${attr}] *`)
 
-    if (!isAnimatedBtn) 
+    if (!isAnimatedBtn)
       return
 
     ev.preventDefault()
 
     const btn = ev.target.closest(`[${attr}]`)
-    btn.classList.toggle(btn.getAttribute(attr))
+    const switchClass = btn.getAttribute(attr)
+    btn.classList.toggle(switchClass)
+
+    const isSwitched = btn.classList.contains(switchClass)
+    onSwitch(btn, isSwitched)
   }
 
   /**
@@ -40,13 +45,13 @@ export class Switch {
    * @return {void}
    */
   key(ev) {
-    const { attr } = this.config  
+    const { attr, onSwitch } = this.config
     const isAnimatedBtn = ev.target.matches(`[${attr}]`)
 
-    if (!isAnimatedBtn) 
+    if (!isAnimatedBtn)
       return
-  
-    if (ev.key === 's') { // The 's' is for 'spin'
+
+    if (ev.key === 's') { // The 's' is for 'switch'
       ev.preventDefault()
       ev.target.click()
     }

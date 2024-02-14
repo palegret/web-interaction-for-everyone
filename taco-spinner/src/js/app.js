@@ -14,30 +14,11 @@ setTimeout(() => {
 
 const switchBtns = new Switch()
 
-// Global click listener -- moved to Switch class
-/*
-document.addEventListener('click', ev => {
-  const isAnimatedBtn = ev.target.matches('.animated-btn, .animated-btn *')
-  
-  if (!isAnimatedBtn) 
-  return
-
-ev.preventDefault()
-
-const btn = ev.target.closest('.animated-btn')
-btn.classList.toggle('spin')
-})
-
-// Global keydown listener -- moved to Switch class
-document.addEventListener('keydown', ev => {
-  const isAnimatedBtn = ev.target.matches('.animated-btn')
-  
-  if (!isAnimatedBtn) 
-    return
-
-  if (ev.key === 's') { // The 's' is for 'spin'
-    ev.preventDefault()
-    ev.target.click()
+const jiggleBtns = new Switch({
+  attr: 'data-jiggle',
+  onSwitch: (btn, isSwitched) => {
+    btn.querySelector('.target').textContent = isSwitched ? '😬' : '🌯'
+    const message = isSwitched ? `Commence t' jigglin'!` : `Jigglin's done.`
+    console.log(message)
   }
 })
-*/
