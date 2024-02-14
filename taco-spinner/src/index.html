@@ -17,20 +17,19 @@
       <main class="page">
         <form>
           <!-- Taco button -->
-          <button id="taco-btn" class="info animated-btn">
-            <span class="spinner">🌮</span>
+          <button id="tacoBtn" class="info animated-btn" data-switch="spin">
+            <span class="target">🌮</span>
           </button>
           <!-- Burrito button -->
-          <button id="burrito-btn" class="danger animated-btn">
-            <span class="spinner">🌯</span>
+          <button id="burritoBtn" class="danger animated-btn" data-switch="jiggle">
+            <span class="target">🌯</span>
           </button>
-          <!-- Pizza button -->
-          <button id="pizza-btn" class="warning animated-btn">
-            <span class="spinner">🍕</span>
-          </button>
+          <!-- Pizza button (async) -->
+          <div id="asyncBtnContainer">
+          </div>
         </form>
       </main>
     </div>
-    <script src="js/app.js"></script>
+    <script type="module" src="js/app.js"></script>
   </body>
 </html>
