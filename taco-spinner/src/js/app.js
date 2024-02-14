@@ -1,9 +1,16 @@
-const tacoBtn = document.getElementById('taco-btn')
-tacoBtn.addEventListener('click', () => {
-  tacoBtn.classList.toggle('spin')
-})
+// Resources:
+// https://keycode.info/
+// Lookup for the key code for the key you want to use.
 
-const burritoBtn = document.getElementById('burrito-btn')
-burritoBtn.addEventListener('click', () => {
-  burritoBtn.classList.toggle('spin')
+document.querySelectorAll('.animated-btn').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.preventDefault()
+    btn.classList.toggle('spin')
+  })
+  btn.addEventListener('keydown', e => {
+    if (e.key === 's') { // The 's' is for 'spin'
+      e.preventDefault()
+      btn.click()
+    }
+  })
 })

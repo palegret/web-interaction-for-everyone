@@ -1,34 +1,30 @@
-// Taco button
-#taco-btn,
-#burrito-btn {
+.animated-btn {
   display: block;
-  font-size: 80px;
-  height: 200px;
+  height: 140px;
   width: 100%;
+  font-size: 75px;
 
   + button {
     margin-top: 15px;
   }
 
-  // Spin that taco
+  // Class that gets toggled on the button via JavaScript
   &.spin {
-    .taco {
+    .spinner {
       animation: spin .1s linear infinite;
       display: inline-block;
     }
-    .burrito {
-      animation: zoom .3s linear infinite;
+  }
+
+  // Class that gets toggled on the button via JavaScript
+  &.zoom {
+    .zoomer {
+      animation: zoom .4s linear infinite;
       display: inline-block;
     }
   }
 }
 
-// Burrito button
-#burrito-btn {
-  background-color: #f06b4e;
-}
-
-// Spin
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -39,7 +35,6 @@
   }
 }
 
-// Zoom
 @keyframes zoom {
   0% {
     transform: scale(.5);
