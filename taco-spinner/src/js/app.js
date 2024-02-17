@@ -1,4 +1,4 @@
-import {Switch} from './switch'
+import { Switch } from './switch'
 
 // Resources:
 // https://keycode.info/
