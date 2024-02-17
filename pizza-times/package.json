@@ -1,0 +1,19 @@
+{
+  "name": "pizza-times",
+  "version": "1.0.0",
+  "description": "The latest and greatest pizza news, reported with the utmost journalistic integrity.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "parcel src/index.html --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.11.0",
+    "sass": "^1.70.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.11.0"
+  }
+}

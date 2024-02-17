@@ -1,0 +1,85 @@
+.animated-btn {
+  display: block;
+  height: 140px;
+  width: 100%;
+  margin-top: 15px;
+  font-size: 70px;
+
+  // Remove top margin from the first .animated-btn
+  &:first-of-type {
+    margin-top: 0; 
+  }
+
+  // Classes that gets toggled on the button via JavaScript
+  &.spin {
+    .target {
+      animation: spin .2s linear infinite;
+      display: inline-block;
+    }
+  }
+
+  &.jiggle {
+    .target {
+      animation: jiggle .2s linear infinite;
+      display: inline-block;
+    }
+  }
+
+  &.zoom {
+    .target {
+      animation: zoom .2s linear infinite;
+      display: inline-block;
+    }
+  }
+}
+
+#asyncBtnContainer {
+  margin-top: 15px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes jiggle {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(20px);
+  }
+
+  75% {
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(.5);
+  }
+
+  25% {
+    transform: scale(1.25);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  75% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

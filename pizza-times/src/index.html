@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌮</title>
+    <link rel="stylesheet" href="scss/theme/theme.scss">
+    <link rel="stylesheet" href="scss/app.scss">
+  </head>
+  <body class="app-container">
+    <div id="app" class="app-frame">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <h1 class="brand">Taco Spinner</h1>
+      </nav>
+      <!-- Page -->
+      <main class="page">
+        <form>
+          <!-- Taco button -->
+          <button id="tacoBtn" class="info animated-btn" data-switch="spin">
+            <span class="target">🌮</span>
+          </button>
+          <!-- Burrito button -->
+          <button id="burritoBtn" class="danger animated-btn" data-jiggle="jiggle">
+            <span class="target">🌯</span>
+          </button>
+          <!-- Pizza button (async) -->
+          <div id="asyncBtnContainer">
+          </div>
+        </form>
+      </main>
+    </div>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
