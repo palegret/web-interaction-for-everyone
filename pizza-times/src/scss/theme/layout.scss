@@ -21,10 +21,10 @@ body {
 .app-frame {
   background: $lightest;
   box-shadow: $box-shadow;
-  // height: $app-height;
+  height: $app-height;
   margin: auto;
   overflow: auto;
-  // width: $app-width;
+  width: $app-width;
 }
 
 // Page

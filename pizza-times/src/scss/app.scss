@@ -1,85 +1,51 @@
-.animated-btn {
-  display: block;
-  height: 140px;
-  width: 100%;
-  margin-top: 15px;
-  font-size: 70px;
+@import 'config';
 
-  // Remove top margin from the first .animated-btn
-  &:first-of-type {
-    margin-top: 0; 
-  }
+// Story
+.story {
+  clear: both;
 
-  // Classes that gets toggled on the button via JavaScript
-  &.spin {
-    .target {
-      animation: spin .2s linear infinite;
-      display: inline-block;
-    }
-  }
-
-  &.jiggle {
-    .target {
-      animation: jiggle .2s linear infinite;
-      display: inline-block;
-    }
-  }
-
-  &.zoom {
-    .target {
-      animation: zoom .2s linear infinite;
-      display: inline-block;
-    }
+  + .story {
+    margin-top: 40px;
   }
 }
 
-#asyncBtnContainer {
-  margin-top: 15px;
+// Thumbnail
+.thumb {
+  float: right;
+  height: 65px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 65px;
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+// Date line
+.dateline {
+  color: $medium;
+  font-style: italic;
+  margin: 0 0 .25em;
 }
 
-@keyframes jiggle {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
-  25% {
-    transform: translateX(20px);
-  }
-
-  75% {
-    transform: translateX(-20px);
-  }
+// Excerpt
+.excerpt {
+  margin: 0 0 .5em;
 }
 
-@keyframes zoom {
-  0% {
-    transform: scale(.5);
-  }
+// Headline
+.headline {
+  font-size: 1.1em;
+  font-weight: 700;
+}
 
-  25% {
-    transform: scale(1.25);
-  }
+// Reaction buttons
+.react-btn {
+  font-size: 18px;
+  text-shadow: none;
+}
 
-  50% {
-    transform: scale(1.5);
-  }
+.reactions {
+  display: inline-block;
 
-  75% {
-    transform: scale(1.25);
-  }
-
-  100% {
-    transform: scale(1);
+  &:not(.active) {
+    display: none;
   }
 }

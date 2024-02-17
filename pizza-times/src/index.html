@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌮</title>
+    <title>🍕</title>
     <link rel="stylesheet" href="scss/theme/theme.scss">
     <link rel="stylesheet" href="scss/app.scss">
   </head>
@@ -11,23 +11,52 @@
     <div id="app" class="app-frame">
       <!-- Navbar -->
       <nav class="navbar">
-        <h1 class="brand">Taco Spinner</h1>
+        <h1 class="brand">🍕</h1>
       </nav>
       <!-- Page -->
       <main class="page">
-        <form>
-          <!-- Taco button -->
-          <button id="tacoBtn" class="info animated-btn" data-switch="spin">
-            <span class="target">🌮</span>
-          </button>
-          <!-- Burrito button -->
-          <button id="burritoBtn" class="danger animated-btn" data-jiggle="jiggle">
-            <span class="target">🌯</span>
-          </button>
-          <!-- Pizza button (async) -->
-          <div id="asyncBtnContainer">
+        <!-- Story 1 -->
+        <div class="story">
+          <div class="story-content">
+            <img class="thumb" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=400&h=400&q=80" alt="Thumbnail">
+            <h3 class="headline">Study Shows Pizza is a Medical Cure-All</h3>
+            <p class="dateline">April 1, 2019</p>
+            <p class="excerpt">
+              A <em>totally</em> real research team from a probably-legit 
+              laboratory recently published a study showing that pizza is 
+              amazingly beneficial to your health.
+            </p>
           </div>
-        </form>
+          <div class="toggle">
+            <button class="react-btn lighter" data-toggle=".reactions">➕</button>
+            <div class="reactions">
+              <button class="react-btn lighter">👍️</button>
+              <button class="react-btn lighter">❤️</button>
+              <button class="react-btn lighter">👎</button>
+            </div>
+          </div>
+        </div>
+        <!-- Story 2 -->
+        <div class="story">
+          <div id="story2-content" class="story-content">
+            <img class="thumb" src="https://images.unsplash.com/photo-1546993368-17bb306b93f0?auto=format&fit=crop&w=400&h=400&q=80" alt="Thumbnail">
+            <h3 class="headline">Pizza Credited With Saving Man’s Life</h3>
+            <p class="dateline">April 1, 2019</p>
+            <p class="excerpt">
+              &ldquo;As I fell toward the ravine, I thought to myself, 
+              <em>this is it</em>. But then I remembered the pizza.&rdquo; 
+              Discover Amelio Formaggio’s amazing survival story.
+            </p>
+          </div>
+          <div class="toggle">
+            <button class="react-btn lighter" data-toggle=".reactions">➕</button>
+            <div class="reactions">
+              <button class="react-btn lighter">👍️</button>
+              <button class="react-btn lighter">❤️</button>
+              <button class="react-btn lighter">👎</button>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
     <script type="module" src="js/app.js"></script>
