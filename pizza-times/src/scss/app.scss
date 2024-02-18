@@ -1,5 +1,8 @@
 @import 'config';
 
+// Variables
+$app-timing-fn: cubic-bezier(.68, .07, .21, 1.95);
+
 // Story
 .story {
   clear: both;
@@ -40,12 +43,93 @@
 .react-btn {
   font-size: 18px;
   text-shadow: none;
+  
+  &[aria-expanded='true'] {
+    .plus {
+      .v {
+        transform: rotate(90deg);
+        transition: transform .3s ease;
+      }
+    }
+  }  
 }
 
 .reactions {
   display: inline-block;
 
+  .react-btn {
+    animation: slide-in .3s $app-timing-fn;
+    animation-fill-mode: backwards;
+
+    @for $i from 1 through 3 {
+      &:nth-child(#{$i}) {
+        animation-delay: #{($i - 1) * .1}s;
+      }
+    }
+  }
+
   &:not(.active) {
     display: none;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// Plus icon
+.plus {
+  position: relative;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+
+  .h {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin-top: -1px;
+    background: $dark;
+  }
+
+  .v {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 2px;
+    margin-left: -1px;
+    background: $dark;
+  }
+}
+
+// Screen reader only
+// From: https://github.com/twbs/bootstrap/blob/main/scss/mixins/_visually-hidden.scss
+.sr-only {
+  position: absolute;
+  clip: rect(0, 0, 0, 0) !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  margin: -1px !important; // Fix for https://github.com/twbs/bootstrap/issues/25686
+  padding: 0 !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+
+  // Fix for positioned table caption that could become anonymous cells
+  &:not(caption) {
+    position: absolute !important;
   }
 }
