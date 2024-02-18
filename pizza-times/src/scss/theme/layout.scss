@@ -19,6 +19,7 @@ body {
 
 // App
 .app-frame {
+  position: relative;
   background: $lightest;
   box-shadow: $box-shadow;
   height: $app-height;

@@ -133,3 +133,43 @@ $app-timing-fn: cubic-bezier(.68, .07, .21, 1.95);
     position: absolute !important;
   }
 }
+
+.super-annoying-legal-disclaimer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px;
+  background: transparentize($lighter, .05);
+  box-shadow: 0 -4px 8px transparentize($darker, .8);
+
+  p {
+    margin: 0;
+  }
+
+  &:not(.active) {
+    display: none;
+  }
+}
+
+// Close button
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: transparent;
+  box-shadow: none;
+  text-shadow: none;
+  color: $medium;
+  font-size: 24px;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: $primary;
+  }
+
+  &:active {
+    box-shadow: none;
+  }  
+}

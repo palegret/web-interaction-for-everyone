@@ -1,3 +1,8 @@
 import { Toggle } from './toggle'
 
-const toggleBtns = new Toggle()
+const reactionToggleBtns = new Toggle()
+
+const disclaimerDismissible = new Toggle({
+  attr: 'data-dismiss',
+  toggleContainer: '.dismissible',
+})
