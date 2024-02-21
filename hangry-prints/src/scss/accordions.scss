@@ -1,0 +1,34 @@
+// Accordions
+.accordion {
+  margin-top: 20px;
+}
+
+// Accordion headers
+.accordion-header {
+  font-size: 1em;
+
+  a {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    text-decoration: none;
+  }
+
+  .accordion-question {
+    text-decoration: underline;
+    text-decoration-color: $primary;
+  }
+
+  .accordion-icon {
+    color: $medium;
+  }
+}
+
+// Accordion panels
+.accordion-panel {
+  padding-bottom: 25px;
+
+  p {
+    margin: 0;
+  }
+}

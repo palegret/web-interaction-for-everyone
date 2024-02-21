@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>😡</title>
+    <link rel="stylesheet" href="scss/theme/theme.scss">
+    <link rel="stylesheet" href="scss/app.scss">
+  </head>
+  <body class="app-container">
+    <div id="app" class="app-frame">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <!-- Brand -->
+        <h1 class="brand">😡</h1>
+        <!-- Menu button-->
+        <div class="toggle">
+          <button class="menu-btn primary" data-toggle=".menu" aria-expanded="false">
+            <span class="menu-icon" aria-hidden="true">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </span>
+            <span class="sr-only">Toggle menu</span>
+          </button>
+          <!-- Menu -->
+          <div class="menu">
+            <a class="menu-item">Hangry Prints</a>
+            <a class="menu-item">Featured Products</a>
+            <a class="menu-item">The Hangry Shop</a>
+            <a class="menu-item">Cure World Hanger</a>
+            <a class="menu-item">Support</a>
+            <hr class="light">
+            <a class="menu-item">Account Settings</a>
+            <a class="menu-item">Sign Out</a>
+          </div>
+        </div>
+      </nav>
+      <!-- Page -->
+      <main class="page">
+        <!-- Tabs -->
+        <div class="tabs">
+          <!-- Tabs navigation -->
+          <ul class="tabs-nav">
+            <li><a href="#dogs" data-tab="#dogs" aria-expanded="true"><span>🌭</span></a></li>
+            <li><a href="#burgers" data-tab="#burgers" aria-expanded="false"><span>🍔</span></a></li>
+            <li><a href="#veggies" data-tab="#veggies" aria-expanded="false"><span>🥦</span></a></li>
+          </ul>
+          <!-- Hot dogs -->
+          <div id="dogs" class="tab-panel active">
+            <div class="product">
+              <article class="detail">
+                <h2>Print-a-Dog</h2>
+                <p>
+                  Oh yeah, this is one delicious 3D-printed hot dog. Print now 
+                  to shove it down your hangry gullet.
+                </p>
+                <button><strong>Print:</strong> $5.99</button>
+              </article>
+              <figure class="thumb">
+                <img src="https://images.unsplash.com/photo-1541151040323-4d766525ec84?auto=format&fit=crop&w=400&h=400&q=80" alt="Hot dogs">
+              </figure>
+            </div>
+            <div class="product">
+              <article class="detail">
+                <h2>Speedy Dog</h2>
+                <p>
+                  Hosting a garden party? Our most rapidly-printing hot dog is 
+                  great for hangry party guests.
+                </p>
+                <button><strong>Print:</strong> $2.99</button>
+              </article>
+              <figure class="thumb">
+                <img src="https://images.unsplash.com/photo-1515875976234-9d59c3ef288d?auto=format&fit=crop&w=400&h=400&q=80" alt="Hot dog">
+              </figure>
+            </div>
+            <div class="product">
+              <article class="detail">
+                <h2>Ahoy Soy Dog</h2>
+                <p>
+                  If you live one of those animal-carcass-free lifestyles, then 
+                  ahoy! Our soy dog is for you.
+                </p>
+                <button><strong>Print:</strong> $7.99</button>
+              </article>
+              <figure class="thumb">
+                <img src="https://images.unsplash.com/photo-1542344807-21226ec94b39?auto=format&fit=crop&w=400&h=400&q=80" alt="Hot dogs">
+              </figure>
+            </div>
+          </div>
+          <!-- Hamburgers -->
+          <div id="burgers" class="tab-panel">
+            <div class="product">
+              <article class="detail">
+                <h2>Straight Outta Hamburg</h2>
+                <p>
+                  Print this Hamburg-style hamburger to permanently crush that 
+                  familiar hangry feeling.
+                </p>
+                <button><strong>Print:</strong> $7.99</button>
+              </article>
+              <figure class="thumb">
+                <img src="https://images.unsplash.com/photo-1508736793122-f516e3ba5569?auto=format&fit=crop&w=400&h=400&q=80" alt="Burger">
+              </figure>
+            </div>
+            <div class="product">
+              <article class="detail">
+                <h2>The Behemoth</h2>
+                <p>
+                  With well over two pounds of meat, this crazy burger is going 
+                  to quell your hanger and make you a whole different kind of 
+                  angry.
+                </p>
+                <button><strong>Print:</strong> $10.99</button>
+              </article>
+              <figure class="thumb">
+                <img src="https://images.unsplash.com/photo-1548946522-4a313e8972a4?auto=format&fit=crop&w=400&h=400&q=80" alt="Burger">
+              </figure>
+            </div>
+            <div class="product">
+              <article class="detail">
+                <h2>The Mean Bean</h2>
+                <p>
+                  Spicy. Hot. Flaming. Mean. This black bean vegetarian burger 
+                  is guaranteed to knock your socks off.
+                </p>
+                <button><strong>Print:</strong> $9.99</button>
+              </article>
+              <figure class="thumb">
+                <img src="https://images.unsplash.com/photo-1548435297-6fcc2b3def2f?auto=format&fit=crop&w=400&h=400&q=80" alt="Burger">
+              </figure>
+            </div>
+          </div>
+          <!-- Vegetables -->
+          <div id="veggies" class="tab-panel">
+            <div class="product">
+              <article class="detail">
+                <h2>Endless Salad</h2>
+                <p>
+                  Make sure to check your printer’s material levels before 
+                  hitting <em>print</em> on this bad boy. Just open your mouth 
+                  and the printer will continually emit what totally looks like 
+                  vegetables.
+                </p>
+                <button><strong>Print:</strong> $8.99</button>
+              </article>
+              <figure class="thumb">
+                <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=400&h=400&q=80" alt="Salad">
+              </figure>
+            </div>
+            <div class="product">
+              <article class="detail">
+                <h2>Avacado Bravado</h2>
+                <p>
+                  Be the star of your next get-together with this beautiful 
+                  appetizer arrangement. It tastes at least half as good as it 
+                  looks.
+                </p>
+                <button><strong>Print:</strong> $12.99</button>
+              </article>
+              <figure class="thumb">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=400&h=400&q=80" alt="Avacado and vegetables">
+              </figure>
+            </div>
+            <div class="product">
+              <article class="detail">
+                <h2>It’s Pepper Time</h2>
+                <p>
+                  Guaranteed to cure your hanger for at least 12 hours, you 
+                  won’t even want to eat after shoving a handful of these 
+                  way-too-spicy peppers into your mouth.
+                </p>
+                <button><strong>Print:</strong> $3.99</button>
+              </article>
+              <figure class="thumb">
+                <img src="https://images.unsplash.com/photo-1510158116705-876a58899622?auto=format&fit=crop&w=400&h=400&q=80" alt="Hot peppers">
+              </figure>
+            </div>
+          </div>
+        </div>
+        <!-- Breakfast tabs -->
+        <div class="tabs">
+          <!-- Tabs navigation -->
+          <ul class="tabs-nav">
+            <li><a href="#bacon" data-tab="#bacon" aria-expanded="true"><span>🥓</span></a></li>
+            <li><a href="#eggs" data-tab="#eggs" aria-expanded="false"><span>🍳</span></a></li>
+          </ul>
+          <!-- Bacon -->
+          <div id="bacon" class="tab-panel active">
+            <p>Bacon!</p>
+          </div>
+          <div id="eggs" class="tab-panel">
+            <p>Eggs!</p>
+          </div>
+        </div>        
+      </main>
+    </div>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

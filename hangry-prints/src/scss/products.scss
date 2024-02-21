@@ -1,0 +1,25 @@
+// Products
+.product {
+  display: flex;
+  justify-content: space-between;
+
+  + .product {
+    border-top: 1px solid $lighter;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+
+  .detail {
+    width: 70%;
+  }
+
+  .thumb {
+    margin: 0;
+    width: 25%;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}

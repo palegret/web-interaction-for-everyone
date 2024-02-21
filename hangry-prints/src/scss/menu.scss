@@ -1,0 +1,61 @@
+// Menu button
+.menu-btn {
+  border-radius: 0;
+  height: $navbar-height;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: $navbar-height;
+}
+
+// Menu
+.menu {
+  background: $darker;
+  left: 0;
+  min-height: calc(100% - #{$navbar-height});
+  overflow-y: auto;
+  padding: 15px 0;
+  position: absolute;
+  top: $navbar-height;
+  width: 200px;
+  z-index: 1;
+
+  &:not(.active) {
+    display: none;
+  }
+
+  hr {
+    margin: 10px 15px;
+  }
+}
+
+// Menu items
+.menu-item {
+  color: $lightest;
+  cursor: pointer;
+  display: block;
+  padding: 5px 15px;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $primary;
+  }
+}
+
+// Menu icon
+.menu-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 28px;
+
+  .line {
+    border-top: 2px solid $lightest;
+    display: block;
+
+    + .line {
+      margin-top: 8px;
+    }
+  }
+}

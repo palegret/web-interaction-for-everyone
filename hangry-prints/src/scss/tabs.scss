@@ -1,0 +1,36 @@
+// Tabs
+.tabs {
+  margin-bottom: 30px;
+}
+
+.tabs-nav {
+  border-bottom: 4px solid $primary;
+  display: flex;
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+
+  > li {
+    margin-right: 4px;
+
+    a {
+      background: $lighter;
+      border-radius: $radius $radius 0 0;
+      display: block;
+      font-size: 30px;
+      padding: 10px 15px 5px;
+      text-decoration: none;
+
+      &[aria-expanded='true'] {
+        background-color: $primary;
+      }
+    }
+  }
+}
+
+// Tab panels
+.tab-panel {
+  &:not(.active) {
+    display: none;
+  }
+}

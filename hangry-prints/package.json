@@ -1,0 +1,20 @@
+{
+  "name": "hangry-prints",
+  "version": "1.0.0",
+  "description": "Instant 3D-printed snacks for when you’re feeling hangry.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "start:support": "parcel src/support.html --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.11.0",
+    "sass": "^1.70.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.11.0"
+  }
+}

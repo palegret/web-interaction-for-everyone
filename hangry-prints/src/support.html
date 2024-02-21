@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>😡</title>
+    <link rel="stylesheet" href="scss/theme/theme.scss">
+    <link rel="stylesheet" href="scss/app.scss">
+  </head>
+  <body class="app-container">
+    <div id="app" class="app-frame">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <!-- Brand -->
+        <h1 class="brand">😡</h1>
+        <!-- Menu button-->
+        <div class="toggle">
+          <button class="menu-btn primary" data-toggle=".menu" aria-expanded="false">
+            <span class="menu-icon" aria-hidden="true">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </span>
+            <span class="sr-only">Toggle menu</span>
+          </button>
+          <!-- Menu -->
+          <div class="menu">
+            <a class="menu-item">Hangry Prints</a>
+            <a class="menu-item">Featured Products</a>
+            <a class="menu-item">The Hangry Shop</a>
+            <a class="menu-item">Cure World Hanger</a>
+            <a class="menu-item">Support</a>
+            <hr class="light">
+            <a class="menu-item">Account Settings</a>
+            <a class="menu-item">Sign Out</a>
+          </div>
+        </div>
+      </nav>
+      <!-- Page -->
+      <main class="page">
+        <h1>Support</h1>
+        <p>Need help with your hanger? You’re in the right place.</p>
+        <hr>
+        <h3>Frequently Asked Questions</h3>
+        <!-- Accordion -->
+        <div class="accordion">
+          <h4 class="accordion-header">
+            <a href="#print">
+              <span class="accordion-question">I can really just print food when I’m hangry?</span>
+              <span class="accordion-icon" aria-hidden="true">＋</span>
+            </a>
+          </h4>
+          <div id="print" class="accordion-panel">
+            <p>
+              Oh yeah. Any time you feel that familiar hanger feeling, just hit 
+              the <strong>print</strong> button to quell that angry feeling deep 
+              down inside.
+            </p>
+          </div>
+          <h4 class="accordion-header">
+            <a href="#work">
+              <span class="accordion-question">How does it work?</span>
+              <span class="accordion-icon" aria-hidden="true">＋</span>
+            </a>
+          </h4>
+          <div id="work" class="accordion-panel">
+            <p>
+              Our patented 3D-printing technology transforms delicious 
+              non-perishable soy protein into shapes that <em>totally</em> look 
+              like real food. We think it’s pretty cool.
+            </p>
+          </div>
+          <h4 class="accordion-header">
+            <a href="#limit">
+              <span class="accordion-question">I’m <em>really</em> hangry. Is there a printing limit?</span>
+              <span class="accordion-icon" aria-hidden="true">＋</span>
+            </a>
+          </h4>
+          <div id="limit" class="accordion-panel">
+            <p>
+              Print as much and as often as you like, you hangry beast. Our 
+              automated drone swarm (now with over 50% accuracy) will refill 
+              your printer supplies when they’re low. Just leave a window open.
+            </p>
+          </div>
+          <h4 class="accordion-header">
+            <a href="#nutrition">
+              <span class="accordion-question">Where can I find nutritional information?</span>
+              <span class="accordion-icon" aria-hidden="true">＋</span>
+            </a>
+          </h4>
+          <div id="nutrition" class="accordion-panel">
+            <p>
+              Legally, we’re not allowed to call our products <em>food</em>. 
+              Think of it as a mystery, wrapped in an enigma, wrapped in a hot 
+              dog.
+            </p>
+          </div>
+          <h4 class="accordion-header">
+            <a href="#easy">
+              <span class="accordion-question">Pressing buttons is hard. Is there an easier way to order?</span>
+              <span class="accordion-icon" aria-hidden="true">＋</span>
+            </a>
+          </h4>
+          <div id="easy" class="accordion-panel">
+            <p>
+              We hear you, Mr. or Mrs. Lazy-Pants. Just send a hot dog Emoji 
+              (🌭) to 555-HOT-DOGS and one of our automated drones will deliver 
+              a sizzling hanger-buster right to your mouth.
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
